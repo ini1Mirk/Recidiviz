@@ -1,0 +1,118 @@
+.footer {
+    &__top {
+        padding-top: 112px;
+        padding-bottom: 137px;
+        background-color: #001414;
+    }
+
+    &__container {
+        @include small-tablet {
+            row-gap: 32px;
+        }
+    }
+
+    &__logo {
+        @include small-tablet {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__bottom {
+        padding-top: 40px;
+        padding-bottom: 63px;
+        background-color: #000F0F;
+
+        &-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include small-tablet {
+                flex-direction: column;
+            }
+        }
+
+        &-text {
+            display: flex;
+            align-items: center;
+        }
+
+        
+    }
+
+    &__column {
+        grid-column: 2 span;
+        
+        &:last-child {
+            grid-column: 11 / 2 span;
+
+            @include small-tablet {
+                grid-column: 2 span;
+                
+            }
+        }
+    }
+
+    &__title {
+        position: relative;
+        margin: 0;
+        margin-bottom: 23px;
+        padding-bottom: 24px;
+
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #7D9798;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 16px;
+            height: 1px;
+            background-color: #25B895;
+        }
+    }
+
+    &__sublist {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+
+        &-link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 10px;
+            color: #E5ECEC;
+        }
+    }
+
+    &__copy {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 10px;
+        color: #E5ECEC;
+    }
+
+    &__right {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 10px;
+        color: #E5ECEC;
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color: #EDECEB;
+    }
+}

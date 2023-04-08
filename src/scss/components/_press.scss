@@ -1,0 +1,119 @@
+.press {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background-color: var(--light-color);
+
+    &__top {
+        margin-bottom: 33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include small-tablet {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 38px;
+        letter-spacing: 1.2px;
+        color: #003331;
+    }
+
+    &__link {
+        color: #00413E;
+        border: 1px solid rgba(53, 83, 98, 0.2);
+        border-radius: 80px;
+    }
+
+    &__list {
+        row-gap: 32px;
+    }
+
+    &__item {
+        grid-column: 4 span;
+    }
+}
+
+
+.press-card {
+    border-top: 1px solid rgba(53, 83, 98, 0.3);
+    padding-top: 16px;
+    position: relative;
+    min-height: 145px;
+    &__top {
+        margin-bottom: 11px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    &__author {
+        margin: -18px 0;
+        padding: 18px 0;
+        padding-left: 32px;
+        background-position: left top 15px;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: rgba(53, 83, 98, 0.6);
+
+        &--nyt {
+            background-image: url(../../img/svg/IMAGE-1.svg);
+        }
+        &--ted {
+            background-image: url(../../img/svg/IMAGE-2.svg);
+        }
+        &--scoop {
+            background-image: url(../../img/svg/IMAGE-3.svg);
+        }
+        &--asspress {
+            background-image: url(../../img/svg/IMAGE-4.svg);
+        }
+        &--time {
+            background-image: url(../../img/svg/IMAGE-5.svg);
+        }
+        &--freet {
+            background-image: url(../../img/svg/IMAGE.svg);
+        }
+    }
+
+    &__date {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: rgba(53, 83, 98, 0.6);
+    }
+
+    &__title {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        color: #00413E;
+    }
+
+    &__link {
+        color: inherit;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+        }
+    }
+}

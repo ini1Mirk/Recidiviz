@@ -1,0 +1,30 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 33px;
+
+    font-weight: 400;
+    font-size: var(--main-size);
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02px;
+
+    color: var(--light-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 80px;
+
+    &:focus {
+        outline: none;
+    }
+
+    @include hover {
+        border-color: var(--blink-color);
+        background-color: var(--blink-color);
+    }
+
+    &:active {
+        border-color: var(--active-color);
+        background-color: var(--active-color);
+    }
+}

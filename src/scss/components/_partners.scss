@@ -1,0 +1,57 @@
+.partners {
+    padding-top: 16px;
+    &__container {
+        align-items: center;
+        gap: 6px;
+
+        @include big-desktop {   
+            justify-content: space-between;
+        }
+
+        @include tablet {       
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+
+    &__logo {
+        @include big-desktop {
+            max-width: 130px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        @include big-desktop {       
+            justify-content: space-between;
+        }
+
+        @include tablet {       
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: rgba(53, 83, 98, 0.6);
+    }
+
+    &__more {
+        margin: 0;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: rgba(53, 83, 98, 0.6);
+    }
+}

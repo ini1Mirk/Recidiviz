@@ -1,0 +1,125 @@
+.approach {
+    &__top {
+        padding-top: 80px 0;
+        background-color: #F7F8F8;
+    }
+
+    &__left {
+        padding-top: 33px;
+        grid-column: 5 span;
+
+        @include big-desktop {
+            margin-bottom: 32px;
+        }
+
+        @include small-tablet {
+            grid-column: 4 span;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        grid-column: 7 / 6 span;
+        gap: 8px;
+
+        @include big-desktop {
+            grid-column: 12 span;
+            justify-content: flex-start;
+        }
+
+        @include small-tablet {
+            grid-column: 4 span;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__image {
+        height: -webkit-fill-available;
+    }
+
+
+
+    &__title {
+        margin: 0;
+        margin-bottom: 13px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 22px;
+        color: #003331;
+    }
+
+    &__desc {
+        margin: 0;
+        margin-bottom: 37px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: rgba(53, 83, 98, 0.8);
+    }
+
+    &__btn {
+        border: 1px solid rgba(53, 83, 98, 0.2);
+        color: #00413E;
+    }
+
+    &__bottom {
+        padding: 24px 0;
+        background-color: var(--light-color);
+    }
+
+    &__item {
+        grid-column: 2 span;
+    }
+
+    &__link {
+        display: block;
+        border-top: 1px solid rgba(53, 83, 98, 0.3);
+        padding-top: 17px;
+        padding-left: 32px;
+
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: left top 16px;
+
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: rgba(53, 83, 98, 0.8);
+
+        transition: color 0.3s ease-in-out;
+        font-size: var(--main-size);
+        color: rgba(53, 83, 98, 0.8);
+        @include hover {
+            color: var(--accent-color);
+        }
+
+        &--ted {
+            background-image: url(../../img/svg/IMAGE.svg);
+        }
+        &--nyt {
+            background-image: url(../../img/svg/IMAGE-1.svg);
+        }
+        &--scoop {
+            background-image: url(../../img/svg/IMAGE-2.svg);
+        }
+        &--asspress {
+            background-image: url(../../img/svg/IMAGE-3.svg);
+        }
+        &--time {
+            background-image: url(../../img/svg/IMAGE-4.svg);
+        }
+        &--freet {
+            background-image: url(../../img/svg/IMAGE-5.svg);
+        }
+    }
+
+    &:active {
+        color: var(--active-color);
+    }
+
+   
+    
+}
